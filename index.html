@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ASSETS/CSS/style.css">
+    <title>Conversor de moneda</title>
+</head>
+<body>
+
+    
+    <h1>Conversor de moneda CLP</h1>
+    <p>Escoje la moneda y la cantidad para realizar la conversion</p>
+    
+    <div class="container">
+        <div class="moneda">
+           
+            <input 
+            type="number" 
+            id="cantidad_1" 
+            placeholder="0"  
+            value="1"
+            >
+
+        </div>
+
+        <div class="moneda">
+            <select id="moneda2">
+                
+            </select>
+        </div>
+        <div class="tasa-cambio-container">
+            <button class="btn" id="tasa">
+                cambio
+            </button>
+            <div class="cambio" id="cambio"></div>
+            <div id="resultado">
+            
+            </div>
+        </div>
+      
+        
+    </div>
+</div>
+<div class="canva" >
+  <canvas id="grafica"></canvas>
+</div>
+</div>
+
+<script src="./ASSETS/SCRIPT/script.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+</body>
+</html>
